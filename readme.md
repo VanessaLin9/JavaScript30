@@ -41,3 +41,22 @@ Date.getHours()
 min/hour第二個角度數值讓時針跟分針走的更平順
 把每分鐘(小時)要走的格數拆成好幾次走
 ```
+---
+### 03. CSS variables
+```
+其實原生的css就有可以設定變數名稱的功能
+--base: #ffc600 (宣告，格式前方要使用--)
+color: var(--base) (使用，用var())
+
+querySelectorAll()
+吐出來的東西是NotList(不是array)
+內建的function比較少，不過還是有forEach可用
+
+addeventListener()
+'change' 確定值被改變的時候觸發，所以按著滑鼠拉還沒放下時不會觸發
+'mousemove'會偵測滑鼠移動
+
+dataset 吐出來是object
+抓root的style然後重設的語法是重點
+```
+---
