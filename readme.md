@@ -60,3 +60,19 @@ dataset 吐出來是object
 抓root的style然後重設的語法是重點
 ```
 ---
+### 04. Array Cardio Day 1
+```
+一些基本的array練習，難度應該不到Easy
+不過還是有可以學習的地方
+
+console.table() 可以直接看table!!!!
+
+上一個挑戰說過，querySelectorAll出來的會是NodeLink 不是 array
+pototype 裡面能用的內建function很少(沒有map)
+轉成array:
+1. Array.from()
+2. [...展開]
+
+
+```
+---
