@@ -73,6 +73,11 @@ pototype 裡面能用的內建function很少(沒有map)
 1. Array.from()
 2. [...展開]
 
+hash table也可以直接用reduce寫
 
 ```
 ---
+### 05. Flex Panel Gallery
+```
+
+```
