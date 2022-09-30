@@ -79,5 +79,36 @@ hash table也可以直接用reduce寫
 ---
 ### 05. Flex Panel Gallery
 ```
+css selector 有加了 >*
+刪掉在chrome 跟 edge裡看不出差異
+(但是空格留不對反而會有bug)
+(推測應該是各瀏覽器相容的部分?或是舊版相容問題?)
+
+toggleActive 那邊要用includes('flex')
+影片中說明是 safari 是flex-grow chrome是flex 寫死=== flex 選取上會有問題
+不過我查了一下 can i use 好像已經沒有這個問題了(?) 
+而且我chrome 顯示的property 也是flex-grow
+不過就先這樣
+```
+---
+### 06. Type Ahead
+```
+這集學到的超多讚讚
+
+fetch return 的是promise物件(常忘記)
+
+字串的搜尋.match() 
+除了直接給string 也可以給正規表達式
+
+宣告一個正規表達式除了使用/ / 以外
+還可以 new RegExp(string寫需要的, flags)
+適合用在這次這種要塞變數的場合
+這邊flags裡用到的 
+'g': global search, 'i': 不比對大小寫
+
+用String.replace()做出比對相同的字串處換樣式
+
 
 ```
+- [mdn: Regular Expression](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Guide/Regular_Expressions)
+---
