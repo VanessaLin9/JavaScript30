@@ -106,9 +106,21 @@ fetch return 的是promise物件(常忘記)
 這邊flags裡用到的 
 'g': global search, 'i': 不比對大小寫
 
-用String.replace()做出比對相同的字串處換樣式
-
-
+用String.replace(要比對字串(RegExp), 取代的字串)
+做出比對相同的字串處換樣式
 ```
 - [mdn: Regular Expression](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Guide/Regular_Expressions)
+---
+### 07. Array Cardio Day 2
+```
+array 其他常用的函式複習
+.some() return boolean 有一個符合就true
+.every() return boolean 全部都符合才true
+
+.find() return 找到的值(在這題是object)
+.findIndex() return 符合的 index
+
+.splice() 剪切原array 可用變數接到被切掉的那個值
+.slice() 不改變原array 
+```
 ---
