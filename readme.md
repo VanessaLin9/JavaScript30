@@ -124,3 +124,31 @@ array 其他常用的函式複習
 .slice() 不改變原array 
 ```
 ---
+### 08. Fun with HTML5 Canvas
+```
+自己建一個小畫家!! 超讚
+使用html5原生的 canvas標籤來玩
+
+起手式:
+使用 .getContext() 取得渲染環境 
+使用canvas屬性調整長寬大小
+(mdn有寫不建議用外部css去調整)
+
+.strokeStyle 設定勾勒圖形用的顏色(填滿用fillStyle)
+.lineCap 指定線條端點樣式(有三種可選，見mdn)
+.lineJoin 指定兩線連接處的樣式(也有三種可選，見mdn)
+.lineWidth 指定線粗細
+
+.beginPath() 產生一個路徑
+.move(x, y) 畫筆移動到這個點
+.lineTo(x, y) 從目前繪點畫一條直線到這個點
+
+hsl(0~360, saturation%, lightness%)
+參數1可用數字表示一個紅色開始(0)紅色結束(360)的彩虹色, 
+參數2是飽和度,3是亮度
+
+globalCompositeOperation 有許多參數可以玩
+```
+- [mdn: canvas](https://developer.mozilla.org/zh-TW/docs/Web/API/Canvas_API/Tutorial/Basic_usage)
+- [mother effing hsl](https://mothereffinghsl.com/)
+- [globalCompositeOperation](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/globalCompositeOperation)
