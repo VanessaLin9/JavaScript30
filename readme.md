@@ -152,3 +152,9 @@ globalCompositeOperation 有許多參數可以玩
 - [mdn: canvas](https://developer.mozilla.org/zh-TW/docs/Web/API/Canvas_API/Tutorial/Basic_usage)
 - [mother effing hsl](https://mothereffinghsl.com/)
 - [globalCompositeOperation](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/globalCompositeOperation)
+---
+### 09. Must know Dev Tools Tricks
+```
+console 的各種使用方式
+直接看code就=筆記🤠
+```
