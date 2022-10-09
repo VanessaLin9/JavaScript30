@@ -248,4 +248,14 @@ video監聽timeupdate事件，可以不用寫setInterval
 
 ---
 
-### 12.
+### 12. Key Sequence Detection
+```
+輸入特定的字串有隱藏的網頁小彩蛋
+
+監聽Keyup事件
+array.splice(start, delete, add)的複習
+start 傳負數的話會從尾巴往前算
+delete 不設的話從start開始的都會刪光、傳負數或0的話一個都不刪
+add 選填，不填就不加
+
+```
