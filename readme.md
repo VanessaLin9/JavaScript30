@@ -259,3 +259,22 @@ delete 不設的話從start開始的都會刪光、傳負數或0的話一個都�
 add 選填，不填就不加
 
 ```
+---
+
+### 13. Slide in on Scroll
+```
+實作捲動卷軸的時候，當滑到相對應的位置
+再動畫把圖片滑入
+
+console.count() 可以計算console的次數
+在這邊滾動卷軸的時候會呼叫非常多次function
+使用debounce可以有效優化
+用 console.count()可以看到顯著差異
+
+藉由上面的count也可以提醒
+有時候會寫出像這種滑鼠隨意滑一下就跑上百次function的狀況，要注意到並且加上debounce避免太過浪費效能
+
+設定滾到照片一半的高度的時候動畫滑進來
+學到使用scrollY可以抓到滾到的高度
+還有內件的offsetTop可以抓到定位點與頂點的高度
+```
