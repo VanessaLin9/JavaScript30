@@ -278,3 +278,43 @@ console.count() 可以計算console的次數
 學到使用scrollY可以抓到滾到的高度
 還有內件的offsetTop可以抓到定位點與頂點的高度
 ```
+---
+### 14. Javascript reference VS Copying
+```
+ call by reference VS call by value 的概念
+ 因為不能直接用= 會變call by reference
+
+ [array] 整理了數個copy array的方式
+
+ 1. .slice(start, end) return array
+    原array的shallow copy 
+    start預設為0, end預設為最後一個
+ 2. .concat() return array
+    不會改變原本已存在的array，是回傳一個新的(shallow copy)
+ 3. ES6的新選擇: spread syntax
+    mdn說copy的效果類似.slice()
+    還沒看到底層怎麼做的不過先歸類shallow copy
+ 4. Array.from() mdn說明是建立陣列實體之後對原array(類array)執行.map()
+
+ 作者說3. 4.是他自己喜歡使用的方式
+
+  [object] 整理了數個copy object的方式
+
+ 1. Object.assign() return object
+    用來複製object(包含屬性)
+ 2. spread syntax 影片中還沒實裝
+    現在已經實裝了，
+    mdn說效果類似Object.assign()
+    Note that Object.assign() triggers setters, whereas spread syntax doesn't.
+
+重點是以上皆是淺拷貝，意思是第一層可以copy
+但有第二層的時候依然是 call by reference🤣
+
+需要copy一層以上的時候:
+ 1. 使用其他套件寫好的函式
+    例如cloneDeep
+ 2. 作弊用JS型別轉換來繞過XD
+    
+```
+- [Lodash: cloneDeep](https://lodash.com/docs/4.17.15#cloneDeep)
+- [What is the most efficient way to deep clone an object in JavaScript?](https://stackoverflow.com/questions/122102/what-is-the-most-efficient-way-to-deep-clone-an-object-in-javascript)
