@@ -318,3 +318,36 @@ console.count() 可以計算console的次數
 ```
 - [Lodash: cloneDeep](https://lodash.com/docs/4.17.15#cloneDeep)
 - [What is the most efficient way to deep clone an object in JavaScript?](https://stackoverflow.com/questions/122102/what-is-the-most-efficient-way-to-deep-clone-an-object-in-javascript)
+---
+
+### 15. LocalStorage
+
+```
+(又是一個) todo list
+雖然已經寫很多遍了，但還是可以學到一些東西
+
+Form.reset() 可以reset表單內的值都回到初始狀態
+ (之前自己寫都覆空的值)
+
+把做出清單的function抽出來(populateList)，
+好處是未來有新增清單的時候也可以重複使用
+輸入array預設一個[]避免沒傳入時爆掉
+
+innerHTML 要拿字串，map() return array
+所以要記得要加.join('') 不然會出現奇怪的bug(莫名的,)
+
+localStorage.setItem(key, value)
+注意! 都要是字串形式，
+array 或 object直接丟進去會只剩'object'
+要使用JSON.stringify
+取出再用JSON.parse()
+
+監聽器綁在一直存在的父層的觀念:
+直接綁監聽器在checkbox上是會有bug的
+在checkbox的dom長出來之前，綁監聽器的動作可能已經執行完畢了
+
+因為點擊觸發兩次，或是有可能戳到別的
+.matches()可以檢查event return boolean
+```
+- [input/label冒泡時行為預防](https://ithelp.ithome.com.tw/articles/10192015)
+---
