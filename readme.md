@@ -320,7 +320,7 @@ console.count() 可以計算console的次數
 - [What is the most efficient way to deep clone an object in JavaScript?](https://stackoverflow.com/questions/122102/what-is-the-most-efficient-way-to-deep-clone-an-object-in-javascript)
 ---
 
-### 15. LocalStorage
+### 15. LocalStorage and Event Delegation
 
 ```
 (又是一個) todo list
@@ -351,3 +351,11 @@ array 或 object直接丟進去會只剩'object'
 ```
 - [input/label冒泡時行為預防](https://ithelp.ithome.com.tw/articles/10192015)
 ---
+### 16. Mouse move Shadow
+
+```
+監聽的時候如果元素有子元素的時候
+滑到子元素 mousemove 會給你
+以子元素層那層去算(做邊框)的x,y
+
+```
