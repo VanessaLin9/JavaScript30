@@ -359,3 +359,22 @@ array 或 object直接丟進去會只剩'object'
 以子元素層那層去算(做邊框)的x,y
 
 ```
+---
+### 17. Sort Without Articles
+
+```
+render出List, 並按照"除了冠詞外"的字排序
+自己先寫完再看影片，發現自己需求沒搞清楚就開始寫(檢討)
+
+字串取代功能用.replace()
+
+正規表達式不會寫，筆記:
+建立一個新的正規表達式:
+var re = new RegExp('pattern', 'flags');
+or
+var re = /pattern/flags;
+^匹配輸入的開頭
+(a|b) a or b 
+這邊flags用i表示 Case-insensitive search.
+
+```
