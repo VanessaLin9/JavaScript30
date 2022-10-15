@@ -378,3 +378,13 @@ var re = /pattern/flags;
 這邊flags用i表示 Case-insensitive search.
 
 ```
+---
+### 18. Adding Up Times with Reduce
+```
+將list 中的video 總時長console出來
+每篇的時長放在data set中
+.reduce()的練習
+
+.split()之後會拿到字串
+要轉成數字可以直接接一個.map(parseFloat)
+```
