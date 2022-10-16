@@ -388,3 +388,32 @@ var re = /pattern/flags;
 .split()之後會拿到字串
 要轉成數字可以直接接一個.map(parseFloat)
 ```
+---
+### 19. Webcam Fun
+```
+這集超酷!!居然可以自己寫一個webcam app玩!!!
+
+需要一些套件首先要: npm i
+(避免上傳node modules 也加了ignore)
+
+啟動server: npm start
+
+[大致流程]
+利用video element及時播放webcam的畫面
+每16/1000 sec 擷取webcam的畫面秀在 canvas element
+然後我們就可以在canvas各種玩影像!
+
+// 播放webcam
+video.src 的寫法已經更新了
+現在要寫成.srcObject
+
+//截圖
+button onClick -> takePhoto() 
+音檔來自於audio.snap
+
+//好玩圖片功能
+寫到前面都還正常運作
+開始寫filter之後我的webcam就掛了QQ
+確認過code應該都沒問題，大概是硬體不行了QQ
+只好照著寫，之後再追這個問題
+```
