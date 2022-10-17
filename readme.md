@@ -417,3 +417,19 @@ button onClick -> takePhoto()
 確認過code應該都沒問題，大概是硬體不行了QQ
 只好照著寫，之後再追這個問題
 ```
+---
+### 20. speech Detection
+```
+寫一個自動語音辨識轉成文字的程式!
+超酷!有點像google翻譯會附上的語音輸入功能，講話(英文)就自動轉成字
+一樣不需要特殊的套件包就可以做到
+(不過還是需要跑在server上)
+
+進入本資料夾:
+-> npm i
+-> npm start
+
+使用 window.SpeechRecognition(firFox 不支援)
+自己加了window.open()抓語音開啟我自己的天氣小專案XD
+```
+- [mdn:speechRecognition](https://developer.mozilla.org/en-US/docs/Web/API/SpeechRecognition)
