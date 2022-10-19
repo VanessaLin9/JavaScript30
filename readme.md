@@ -433,3 +433,18 @@ button onClick -> takePhoto()
 自己加了window.open()抓語音開啟我自己的天氣小專案XD
 ```
 - [mdn:speechRecognition](https://developer.mozilla.org/en-US/docs/Web/API/SpeechRecognition)
+---
+### 21. speech Detection
+```
+需要ios的環境
+影片是下載 Xcode 來使用
+我是直接用手機連3000 port 的 external
+
+使用navigator的geolocation api
+method 使用watchPosition()
+不會只抓一次，可以監看多次
+
+不過雖然用手機連線惹我的coords.heading 還是沒有資料XDD
+不過經緯度到是有出來
+
+```
