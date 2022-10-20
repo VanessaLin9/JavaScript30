@@ -434,7 +434,7 @@ button onClick -> takePhoto()
 ```
 - [mdn:speechRecognition](https://developer.mozilla.org/en-US/docs/Web/API/SpeechRecognition)
 ---
-### 21. speech Detection
+### 21. Geolocation
 ```
 需要ios的環境
 影片是下載 Xcode 來使用
@@ -448,3 +448,18 @@ method 使用watchPosition()
 不過經緯度到是有出來
 
 ```
+-[mdn:geolocation](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation)
+
+---
+### 22. Follow Along Link Highlighter
+```
+自動抓取滑鼠滑到哪邊並且把相關的字height出來
+
+'mouseenter': 滑鼠進入元素邊界時觸發，事件不會 bubble，並且在滑鼠完全離開邊界之前不會再次觸發
+
+Element.getBoundingClientRect() 
+可以得到DOMRect對象的大小長寬跟座標值
+
+要特別記得滾動卷軸的時候會跑掉，要加上Scroll修正
+```
+-[getBoundingClientRect](https://developer.mozilla.org/zh-CN/docs/Web/API/Element/getBoundingClientRect)
