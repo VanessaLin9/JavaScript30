@@ -141,7 +141,7 @@ array 其他常用的函式複習
 .findIndex() return 符合的 index
 
 .splice() 剪切原array 可用變數接到被切掉的那個值
-.slice() 不改變原array
+.slice(star, end) 不改變原array，return 一個arr(淺拷貝自原arr) end 有加的話不會算進去
 ```
 
 ---
@@ -463,3 +463,26 @@ Element.getBoundingClientRect()
 要特別記得滾動卷軸的時候會跑掉，要加上Scroll修正
 ```
 -[getBoundingClientRect](https://developer.mozilla.org/zh-CN/docs/Web/API/Element/getBoundingClientRect)
+---
+### 23. Follow Along Link Highlighter
+```
+SpeechSynthesisUtterance() ，web api 是constructor function
+內含好幾個 properties 
+這邊玩到的有:
+.text  
+.voice
+.rate
+.pitch
+
+speechSynthesis, 瀏覽器提供的api 
+有一些properties 跟 methods
+這邊玩到的有:
+.getVoices() 可以拿到該瀏覽器提供的語音
+作者的列表看起來跟我的不一樣，
+不知道是不同瀏覽器還是代數不同
+.speak()
+.cancel()
+(看了一下還有暫停那些這次沒玩到)
+```
+- [mdn: SpeechSynthesisUtterance](https://developer.mozilla.org/zh-CN/docs/Web/API/SpeechSynthesisUtterance)
+- [mdn: speechSynthesis](https://developer.mozilla.org/zh-CN/docs/Web/API/SpeechSynthesis)
