@@ -486,3 +486,12 @@ speechSynthesis, 瀏覽器提供的api
 ```
 - [mdn: SpeechSynthesisUtterance](https://developer.mozilla.org/zh-CN/docs/Web/API/SpeechSynthesisUtterance)
 - [mdn: speechSynthesis](https://developer.mozilla.org/zh-CN/docs/Web/API/SpeechSynthesis)
+---
+### 24. Sticky Nav
+```
+簡單的小變版招式~讚
+class 的 toggle 直接加在body上!
+很細心特別要注意的地方在於:
+1. nav position fix之後跳出頁面流的空位，下面的補上時會有一個斷層跳動感，要記得補上相對應的高度(作者用paddingTop補)
+2. nav 第一格的動畫: 用width不能用 transition控，但是用max-width可以
+```
