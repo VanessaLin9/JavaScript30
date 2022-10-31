@@ -249,6 +249,7 @@ video監聽timeupdate事件，可以不用寫setInterval
 ---
 
 ### 12. Key Sequence Detection
+
 ```
 輸入特定的字串有隱藏的網頁小彩蛋
 
@@ -259,9 +260,11 @@ delete 不設的話從start開始的都會刪光、傳負數或0的話一個都�
 add 選填，不填就不加
 
 ```
+
 ---
 
 ### 13. Slide in on Scroll
+
 ```
 實作捲動卷軸的時候，當滑到相對應的位置
 再動畫把圖片滑入
@@ -278,8 +281,11 @@ console.count() 可以計算console的次數
 學到使用scrollY可以抓到滾到的高度
 還有內件的offsetTop可以抓到定位點與頂點的高度
 ```
+
 ---
+
 ### 14. Javascript reference VS Copying
+
 ```
  call by reference VS call by value 的概念
  因為不能直接用= 會變call by reference
@@ -287,7 +293,7 @@ console.count() 可以計算console的次數
  [array] 整理了數個copy array的方式
 
  1. .slice(start, end) return array
-    原array的shallow copy 
+    原array的shallow copy
     start預設為0, end預設為最後一個
  2. .concat() return array
     不會改變原本已存在的array，是回傳一個新的(shallow copy)
@@ -314,10 +320,12 @@ console.count() 可以計算console的次數
  1. 使用其他套件寫好的函式
     例如cloneDeep
  2. 作弊用JS型別轉換來繞過XD
-    
+
 ```
+
 - [Lodash: cloneDeep](https://lodash.com/docs/4.17.15#cloneDeep)
 - [What is the most efficient way to deep clone an object in JavaScript?](https://stackoverflow.com/questions/122102/what-is-the-most-efficient-way-to-deep-clone-an-object-in-javascript)
+
 ---
 
 ### 15. LocalStorage and Event Delegation
@@ -349,8 +357,11 @@ array 或 object直接丟進去會只剩'object'
 因為點擊觸發兩次，或是有可能戳到別的
 .matches()可以檢查event return boolean
 ```
-- [input/label冒泡時行為預防](https://ithelp.ithome.com.tw/articles/10192015)
+
+- [input/label 冒泡時行為預防](https://ithelp.ithome.com.tw/articles/10192015)
+
 ---
+
 ### 16. Mouse move Shadow
 
 ```
@@ -359,7 +370,9 @@ array 或 object直接丟進去會只剩'object'
 以子元素層那層去算(做邊框)的x,y
 
 ```
+
 ---
+
 ### 17. Sort Without Articles
 
 ```
@@ -374,12 +387,15 @@ var re = new RegExp('pattern', 'flags');
 or
 var re = /pattern/flags;
 ^匹配輸入的開頭
-(a|b) a or b 
+(a|b) a or b
 這邊flags用i表示 Case-insensitive search.
 
 ```
+
 ---
+
 ### 18. Adding Up Times with Reduce
+
 ```
 將list 中的video 總時長console出來
 每篇的時長放在data set中
@@ -388,8 +404,11 @@ var re = /pattern/flags;
 .split()之後會拿到字串
 要轉成數字可以直接接一個.map(parseFloat)
 ```
+
 ---
+
 ### 19. Webcam Fun
+
 ```
 這集超酷!!居然可以自己寫一個webcam app玩!!!
 
@@ -408,7 +427,7 @@ video.src 的寫法已經更新了
 現在要寫成.srcObject
 
 //截圖
-button onClick -> takePhoto() 
+button onClick -> takePhoto()
 音檔來自於audio.snap
 
 //好玩圖片功能
@@ -417,8 +436,11 @@ button onClick -> takePhoto()
 確認過code應該都沒問題，大概是硬體不行了QQ
 只好照著寫，之後再追這個問題
 ```
+
 ---
+
 ### 20. speech Detection
+
 ```
 寫一個自動語音辨識轉成文字的程式!
 超酷!有點像google翻譯會附上的語音輸入功能，講話(英文)就自動轉成字
@@ -432,9 +454,13 @@ button onClick -> takePhoto()
 使用 window.SpeechRecognition(firFox 不支援)
 自己加了window.open()抓語音開啟我自己的天氣小專案XD
 ```
+
 - [mdn:speechRecognition](https://developer.mozilla.org/en-US/docs/Web/API/SpeechRecognition)
+
 ---
+
 ### 21. Geolocation
+
 ```
 需要ios的環境
 影片是下載 Xcode 來使用
@@ -448,33 +474,38 @@ method 使用watchPosition()
 不過經緯度到是有出來
 
 ```
+
 -[mdn:geolocation](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation)
 
 ---
+
 ### 22. Follow Along Link Highlighter
+
 ```
 自動抓取滑鼠滑到哪邊並且把相關的字height出來
 
 'mouseenter': 滑鼠進入元素邊界時觸發，事件不會 bubble，並且在滑鼠完全離開邊界之前不會再次觸發
 
-Element.getBoundingClientRect() 
+Element.getBoundingClientRect()
 可以得到DOMRect對象的大小長寬跟座標值
 
 要特別記得滾動卷軸的時候會跑掉，要加上Scroll修正
 ```
--[getBoundingClientRect](https://developer.mozilla.org/zh-CN/docs/Web/API/Element/getBoundingClientRect)
----
+
+## -[getBoundingClientRect](https://developer.mozilla.org/zh-CN/docs/Web/API/Element/getBoundingClientRect)
+
 ### 23. Follow Along Link Highlighter
+
 ```
 SpeechSynthesisUtterance() ，web api 是constructor function
-內含好幾個 properties 
+內含好幾個 properties
 這邊玩到的有:
-.text  
+.text
 .voice
 .rate
 .pitch
 
-speechSynthesis, 瀏覽器提供的api 
+speechSynthesis, 瀏覽器提供的api
 有一些properties 跟 methods
 這邊玩到的有:
 .getVoices() 可以拿到該瀏覽器提供的語音
@@ -484,10 +515,14 @@ speechSynthesis, 瀏覽器提供的api
 .cancel()
 (看了一下還有暫停那些這次沒玩到)
 ```
+
 - [mdn: SpeechSynthesisUtterance](https://developer.mozilla.org/zh-CN/docs/Web/API/SpeechSynthesisUtterance)
 - [mdn: speechSynthesis](https://developer.mozilla.org/zh-CN/docs/Web/API/SpeechSynthesis)
+
 ---
+
 ### 24. Sticky Nav
+
 ```
 簡單的小變版招式~讚
 class 的 toggle 直接加在body上!
@@ -495,3 +530,26 @@ class 的 toggle 直接加在body上!
 1. nav position fix之後跳出頁面流的空位，下面的補上時會有一個斷層跳動感，要記得補上相對應的高度(作者用paddingTop補)
 2. nav 第一格的動畫: 用width不能用 transition控，但是用max-width可以
 ```
+
+---
+
+### 25. Event Capture, Propagation, Bubbling and Once
+
+```
+這篇在解說冒泡
+capturing phases
+外 -> -> -> 被點擊者
+
+bubbling phases
+外 <- <- <- 被點擊者
+
+Event.stopPropagation() 阻止冒泡事件
+
+addEventListener(type, listener, options)
+平常在用的addEventListener居然有第三個參數!之前都沒有注意到!
+options裡有許多property可選填，這篇講到其中兩個參數更動的效果:
+
+1. capture: 預設是false， 改成true的話會干擾capture往下傳
+2. once: 預設是false， 改成true的話觸發一次之後就會remove listener
+```
+-[mdn:stopPropagation](https://developer.mozilla.org/en-US/docs/Web/API/Event/stopPropagation) -[mdn:addEventListener](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener)
