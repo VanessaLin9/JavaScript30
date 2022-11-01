@@ -553,3 +553,27 @@ options裡有許多property可選填，這篇講到其中兩個參數更動的�
 2. once: 預設是false， 改成true的話觸發一次之後就會remove listener
 ```
 -[mdn:stopPropagation](https://developer.mozilla.org/en-US/docs/Web/API/Event/stopPropagation) -[mdn:addEventListener](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener)
+
+
+---
+
+### 26. Stripe Follow Along Dropdown
+
+```
+算是 22 那集的後續，這次真的要把自動下拉選單做出來了
+會綜合應用上次那集學到的東西
+
+animation 技巧:
+css 要拆成兩次，display none的時候無法用transition
+第一步: display none -> display block  
+第二步: opacity 0 -> opacity 1
+
+作者提到react 或 angular 的動畫做法其實也是類似的作法: 拆成兩步驟
+remove的時候就沒差可以一起
+
+Element.getBoundingClientRect()又再使用了一次(22教過)
+可以得到DOMRect對象的大小長寬跟座標值
+
+詳細設定寫在註解內
+特別要注意的點在於nav本身位置沒有貼齊邊緣的時候只抓dropdown去定位會跑掉(作者故意在nav上面塞一個h2去模擬)要記得修正位置
+```
