@@ -6,7 +6,7 @@ function handleEnter(){
   //show dropdown
   console.log('enter')
   this.classList.add('trigger-enter')
-  setTimeout(() => this.classList.add('trigger-enter-active'), 150)
+  setTimeout(() => this.classList.contains('trigger-enter') && this.classList.add('trigger-enter-active'), 150)
   // show background
   background.classList.add('open');
   //resize background

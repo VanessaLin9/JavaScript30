@@ -576,4 +576,24 @@ Element.getBoundingClientRect()又再使用了一次(22教過)
 
 詳細設定寫在註解內
 特別要注意的點在於nav本身位置沒有貼齊邊緣的時候只抓dropdown去定位會跑掉(作者故意在nav上面塞一個h2去模擬)要記得修正位置
+
+另一個細部技巧: 使用者超快速切換的時候dropdown可能會有bug
+第9行 那邊可以用 && 先確認已經加上第一個樣式再加第二個
+```
+---
+
+### 27. Click and Drag to Scroll
+```
+做一個網頁滿常見的樣式，點擊之後按住可以左右滑動
+可以找到滿多套件可以做到，但其實可以自己寫出來:
+
+監聽滑鼠的四種狀態: 
+mousedown:
+mouseleave:
+mouseup:
+mousemove:
+
+用變數 isDown做開關
+mousedown 時用變數 startX 紀錄定位點
+記得要扣掉 offsetLeft 校正
 ```
