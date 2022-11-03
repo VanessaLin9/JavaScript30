@@ -597,3 +597,15 @@ mousemove:
 mousedown 時用變數 startX 紀錄定位點
 記得要扣掉 offsetLeft 校正
 ```
+---
+
+### 28. Video Speed Controller UI
+```
+這集應該算是 11 的續集
+做一個bar可以調整影片的撥放速度
+前面大部分是一些運算，讓我們可以隨滑鼠滑動調整bar條的高低
+然後在把值同步到播放速度上
+
+video.playbackRate
+可以設定video的播放速度
+```
