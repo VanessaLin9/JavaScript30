@@ -638,3 +638,36 @@ Date.now() 拿到UTC時間，一整串數字
 表單有設定name的話，其實可以直接抓到!!
 input 有設定name的話也可以在裡面直接抓到值
 ```
+---
+
+### 30. Whack A Mole Game
+```
+最後一集! 是打地鼠小遊戲!
+作者說要fun~結果做了一個小遊戲XDDD
+遊戲總長是10秒
+但是地鼠會從哪個洞出來、出來的時長都是隨機的
+
+選擇隨機地鼠洞:
+有用到recursion呢，用來處理剛出的洞不會立刻再出
+
+peep()
+加完地鼠樣式之後用setTimeout移除
+
+計分功能:
+mouse clickevent 裡面有一個 isTrusted
+驗證點擊是否來自使用者而不是其它程式
+```
+-[Event.isTrusted](https://developer.mozilla.org/en-US/docs/Web/API/Event/isTrusted)
+
+---
+
+### 31. That's All Folks!
+```
+後記! 恭喜完課(大撒花)
+作者鼓勵大家繼續做點什麼
+[如果你有1000個東西想做~現在你還有970個再等著你]XDDD
+作者還有分享說，如果你不確定能做什麼
+可以從分享&教別人你學到的東西開始
+開源不只是寫code，新手也可以從分享心得、 post blog等等開始，作者自己的經驗覺得對於進步也很有幫助
+我會把整理好的心得po到 blog當作是對作者的一個迴響
+```
