@@ -5,6 +5,7 @@
 #### 這是 clone 至 [javaScript30 挑戰](https://javascript30.com/)
 
 連續 30 天使用 vanillaJs 完成一些小專案的挑戰
+完課心得整理在medium: [js30完課啦!](https://vanessa7591.medium.com/javascrip30-%E5%AE%8C%E8%AA%B2%E5%95%A6-62c7707f4163)
 每天的小筆記紀錄在下面
 
 ---
@@ -475,7 +476,7 @@ method 使用watchPosition()
 
 ```
 
--[mdn:geolocation](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation)
+- [mdn:geolocation](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation)
 
 ---
 
@@ -492,9 +493,9 @@ Element.getBoundingClientRect()
 要特別記得滾動卷軸的時候會跑掉，要加上Scroll修正
 ```
 
-## -[getBoundingClientRect](https://developer.mozilla.org/zh-CN/docs/Web/API/Element/getBoundingClientRect)
+- [getBoundingClientRect](https://developer.mozilla.org/zh-CN/docs/Web/API/Element/getBoundingClientRect)
 
-### 23. Follow Along Link Highlighter
+### 23. Speech Synthesis
 
 ```
 SpeechSynthesisUtterance() ，web api 是constructor function
@@ -552,7 +553,7 @@ options裡有許多property可選填，這篇講到其中兩個參數更動的�
 1. capture: 預設是false， 改成true的話會干擾capture往下傳
 2. once: 預設是false， 改成true的話觸發一次之後就會remove listener
 ```
--[mdn:stopPropagation](https://developer.mozilla.org/en-US/docs/Web/API/Event/stopPropagation) -[mdn:addEventListener](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener)
+- [mdn:stopPropagation](https://developer.mozilla.org/en-US/docs/Web/API/Event/stopPropagation) -[mdn:addEventListener](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener)
 
 
 ---
@@ -657,7 +658,7 @@ peep()
 mouse clickevent 裡面有一個 isTrusted
 驗證點擊是否來自使用者而不是其它程式
 ```
--[Event.isTrusted](https://developer.mozilla.org/en-US/docs/Web/API/Event/isTrusted)
+- [Event.isTrusted](https://developer.mozilla.org/en-US/docs/Web/API/Event/isTrusted)
 
 ---
 
